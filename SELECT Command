@@ -23,3 +23,9 @@ SELECT DISTINCT viewer_id AS id
 FROM Views
 WHERE author_id = viewer_id 
 ORDER BY id;
+------------------------------------------------------------------------------------------------
+1378. Replace Employee ID With The Unique Identifier
+SELECT E.unique_id, Em.name
+FROM Employees Em
+LEFT JOIN EmployeeUNI E
+ON Em.id = E.id;
